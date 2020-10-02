@@ -1,7 +1,7 @@
 
 ---
-title: "Documentation"
-linkTitle: "文档"
+title: "开源"
+linkTitle: "开源"
 weight: 20
 menu:
   main:

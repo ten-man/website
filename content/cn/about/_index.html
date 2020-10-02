@@ -3,36 +3,45 @@ title: About TEN
 linkTitle: 关于
 menu:
   main:
-    weight: 10
+    weight: 30
 
 ---
 
-
-{{< blocks/cover title="TEN - 一个普通的技术团队" image_anchor="bottom" height="min" >}}
-
+<!-- {{< blocks/cover title="TEN - 一个普通的技术团队" image_anchor="bottom" height="min" >}}
 <p class="lead mt-5">做一些普通的事情
 </p>
+{{< /blocks/cover >}} -->
 
-{{< /blocks/cover >}}
 
 {{% blocks/lead %}}
-Goldydocs is a sample site using the <a href="https://github.com/google/docsy">Docsy</a> Hugo theme that shows what it can do and provides you with a template site structure. It’s designed for you to clone and edit as much as you like. See the different sections of the documentation and site for more ideas.
+<h1>
+  关于TEN
+</h1>
+<br/>
+<p>
+  我们是一个普通的技术团队，我们喜欢蹦跳、篮球和RAP！<br/>
+  <br/>
+  向大牛们学习，请多指教。
+</p>
 {{% /blocks/lead %}}
 
-
-{{< blocks/section >}}
-<div class="col-12">
-<h1 class="text-center">This is another section</h1>
-</div>
-
+{{< blocks/section color="white">}}
+<section class="row td-box td-box--4 td-box--gradient td-box--height-auto linkbox">
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <h2>Learn and Connect</h2>		
+  <p>Using or want to use {{ .Site.Title }}? Find out more here:
+  {{ with index $links "user"}}
+  {{ template "community-links-list"  . }}
+  {{ end }}
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+  <h2>Develop and Contribute</h2>
+  <p>If you want to get more involved by contributing to {{ .Site.Title }}, join us here:
+  {{ with index $links "developer"}}
+  {{ template "community-links-list"  . }}
+  {{ end }}
+  <p>You can find out how to contribute to these docs in our <a href="/docs/contribution-guidelines/">Contribution Guidelines</a>.
+  </div>
+</section>
 {{< /blocks/section >}}
 
-
-
-{{< blocks/section >}}
-
-<div class="col-12">
-<h1 class="text-center">This is another section</h1>
-</div>
-
-{{< /blocks/section >}}

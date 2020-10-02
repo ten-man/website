@@ -3,7 +3,7 @@ title: "Docsy Blog"
 linkTitle: "博客"
 menu:
   main:
-    weight: 30
+    weight: 10
 ---
 
 
