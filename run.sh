@@ -1,4 +1,1 @@
-git submodule update --init --recursive
-npm install
-npm update
-hugo server &
+hugo server --bind=0.0.0.0 -p 1313 >nohup.out 2>&1 &
